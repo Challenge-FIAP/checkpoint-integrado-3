@@ -15,59 +15,59 @@
     <script src="./assets/js/script.js" defer></script>
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbar"
-            aria-controls="navbar"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav d-flex">
-              <li class="nav-item">
-                <a class="nav-link" title="Login" href="./index.html">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" title="Portal" href="./portal.html"
-                  >Portal</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  title="Novo cadastro"
-                  href="./novo-cadastro-login.html"
-                  >Novo cadastro</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  title="Fale conosco"
-                  href="./fale-conosco.html"
-                  >Fale conosco</a
-                >
-              </li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav d-flex">
+            <li class="nav-item">
+              <a class="nav-link" title="Login" href="./index.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" title="Portal" href="./portal.html">Portal</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                title="Novo cadastro"
+                href="./novo-cadastro-login.html"
+                >Novo cadastro</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                title="Fale conosco"
+                href="./fale-conosco.html"
+                >Fale conosco</a
+              >
+            </li>
+          </ul>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
 
     <main class="container">
       <div class="row align-items-center justify-content-center">
         <section class="col-6 form-grid">
           <h1>Fale conosco</h1>
 
-          <form action="#" method="POST" onsubmit="event.preventDefault(), validarDados(assunto.value, nome.value, email.value, comentario.value)">
+          <form
+            action="#"
+            method="POST"
+            onsubmit="event.preventDefault(), validarDados(assunto.value, nome.value, email.value, comentario.value)"
+          >
             <div class="mb-3">
               <label for="assunto" class="form-label">Assunto</label>
               <input
@@ -82,7 +82,14 @@
 
             <div class="mb-3">
               <label for="nome" class="form-label">Seu nome</label>
-              <input type="text" class="form-control" id="nome" name="nome" pattern="([A-zÀ-ž\s]){2,}" required />
+              <input
+                type="text"
+                class="form-control"
+                id="nome"
+                name="nome"
+                pattern="([A-zÀ-ž\s]){2,}"
+                required
+              />
             </div>
 
             <div class="mb-3">
