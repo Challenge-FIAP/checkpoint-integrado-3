@@ -73,6 +73,20 @@
   text-decoration: none;
 }
 
+@media screen and (max-width: 420px) {
+  .form-grid {
+    margin-top: 2rem;
+  }
+
+  .form-grid form {
+    padding: 0 2rem;
+  }
+
+  .observacao {
+    padding: 1.5rem 2rem;
+  }
+}
+
 /*========================================================
 # Portal
 ========================================================*/
