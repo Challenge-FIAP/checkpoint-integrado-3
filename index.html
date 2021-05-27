@@ -69,7 +69,7 @@
         <section class="col-6 form-grid">
           <h1>Login</h1>
 
-          <form>
+          <form method="POST" action="#" onsubmit="event.preventDefault()">
             <div class="mb-3">
               <label for="email" class="form-label">E-mail</label>
               <input
@@ -77,16 +77,20 @@
                 class="form-control"
                 id="email"
                 name="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$"
+                required
               />
             </div>
 
             <div class="mb-3">
               <label for="senha" class="form-label">Senha</label>
               <input
-                type="senha"
+                type="password"
                 class="form-control"
                 id="senha"
                 name="senha"
+                pattern="[\w\W\d]{5,}"
+                required
               />
             </div>
 
@@ -101,7 +105,7 @@
               >
             </div>
 
-            <button type="submit" class="btn mx-auto d-block w-100 btn-primary">
+            <button type="submit" class="btn mx-auto d-block w-100 btn-primary" onclick="validar(email.value, senha.value)">
               Logar
             </button>
           </form>

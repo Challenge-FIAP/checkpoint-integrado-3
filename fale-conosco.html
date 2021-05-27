@@ -67,7 +67,7 @@
         <section class="col-6 form-grid">
           <h1>Fale conosco</h1>
 
-          <form>
+          <form action="#" method="POST" onsubmit="event.preventDefault(), validarDados(assunto.value, nome.value, email.value, comentario.value)">
             <div class="mb-3">
               <label for="assunto" class="form-label">Assunto</label>
               <input
@@ -75,12 +75,14 @@
                 class="form-control"
                 id="assunto"
                 name="assunto"
+                pattern="[\w\W\d]{3,}"
+                required
               />
             </div>
 
             <div class="mb-3">
-              <label for="name" class="form-label">Seu nome</label>
-              <input type="text" class="form-control" id="name" name="name" />
+              <label for="nome" class="form-label">Seu nome</label>
+              <input type="text" class="form-control" id="nome" name="nome" pattern="([A-zÀ-ž\s]){2,}" required />
             </div>
 
             <div class="mb-3">
@@ -90,6 +92,8 @@
                 class="form-control"
                 id="email"
                 name="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$"
+                required
               />
             </div>
 
@@ -100,6 +104,7 @@
                 id="comentario"
                 rows="3"
                 name="comentario"
+                required
               ></textarea>
             </div>
 

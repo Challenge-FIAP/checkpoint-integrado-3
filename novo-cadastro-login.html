@@ -67,10 +67,10 @@
         <section class="col-6 form-grid">
           <h1>Cadastro</h1>
 
-          <form>
+          <form method="POST" action="#" onsubmit="event.preventDefault(), cadastrar(nome.value, senha.value)">
             <div class="mb-3">
-              <label for="name" class="form-label">Seu nome</label>
-              <input type="text" class="form-control" id="name" name="name" />
+              <label for="nome" class="form-label">Seu nome</label>
+              <input type="text" class="form-control" id="nome" name="nome" pattern="([A-zÀ-ž\s]){2,}" required />
             </div>
 
             <div class="mb-3">
@@ -80,16 +80,20 @@
                 class="form-control"
                 id="email"
                 name="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$"
+                required
               />
             </div>
 
             <div class="mb-3">
               <label for="senha" class="form-label">Sua senha</label>
               <input
-                type="senha"
+                type="password"
                 class="form-control"
                 id="senha"
                 name="senha"
+                pattern="[\w\W\d]{5,}"
+                required
               />
             </div>
 
