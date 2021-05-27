@@ -114,3 +114,9 @@
   font-size: 0.9rem;
   font-weight: 300;
 }
+
+@media screen and (max-width: 991px) {
+  .portal-grid .card {
+    margin-bottom: 1rem;
+  }
+}
