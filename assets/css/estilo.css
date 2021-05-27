@@ -76,3 +76,27 @@
 /*========================================================
 # Portal
 ========================================================*/
+.portal {
+  background-color: #e8e8e8;
+}
+
+.portal-grid {
+  margin-top: 2rem;
+}
+
+.portal-grid .card {
+  border: 0;
+}
+
+.portal-grid .card .card-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.portal-grid .card .card-text {
+  color: #333;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
